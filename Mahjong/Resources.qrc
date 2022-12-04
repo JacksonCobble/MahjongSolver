@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/rs">
+        <file>resources/tilelist.txt</file>
+        <file>resources/MahjongTilesImages/Dragon/GreenDragon.png</file>
+        <file>resources/MahjongTilesImages/Dragon/RedDragon.png</file>
+        <file>resources/MahjongTilesImages/Dragon/WhiteDragon.png</file>
+        <file>resources/MahjongTilesImages/Man/1Man.png</file>
+        <file>resources/MahjongTilesImages/Man/2Man.png</file>
+        <file>resources/MahjongTilesImages/Man/3Man.png</file>
+        <file>resources/MahjongTilesImages/Man/4Man.png</file>
+        <file>resources/MahjongTilesImages/Man/5Man.png</file>
+        <file>resources/MahjongTilesImages/Man/9Man.png</file>
+        <file>resources/MahjongTilesImages/Man/8Man.png</file>
+        <file>resources/MahjongTilesImages/Man/7Man.png</file>
+        <file>resources/MahjongTilesImages/Man/6Man.png</file>
+        <file>resources/MahjongTilesImages/Pin/1Pin.png</file>
+        <file>resources/MahjongTilesImages/Pin/2Pin.png</file>
+        <file>resources/MahjongTilesImages/Pin/3Pin.png</file>
+        <file>resources/MahjongTilesImages/Pin/4Pin.png</file>
+        <file>resources/MahjongTilesImages/Pin/5Pin.png</file>
+        <file>resources/MahjongTilesImages/Pin/9Pin.png</file>
+        <file>resources/MahjongTilesImages/Pin/8Pin.png</file>
+        <file>resources/MahjongTilesImages/Pin/7Pin.png</file>
+        <file>resources/MahjongTilesImages/Pin/6Pin.png</file>
+        <file>resources/MahjongTilesImages/Sou/1Sou.png</file>
+        <file>resources/MahjongTilesImages/Sou/2Sou.png</file>
+        <file>resources/MahjongTilesImages/Sou/3Sou.png</file>
+        <file>resources/MahjongTilesImages/Sou/4Sou.png</file>
+        <file>resources/MahjongTilesImages/Sou/5Sou.png</file>
+        <file>resources/MahjongTilesImages/Sou/6Sou.png</file>
+        <file>resources/MahjongTilesImages/Sou/7Sou.png</file>
+        <file>resources/MahjongTilesImages/Sou/8Sou.png</file>
+        <file>resources/MahjongTilesImages/Sou/9Sou.png</file>
+        <file>resources/MahjongTilesImages/Wind/EastWind.png</file>
+        <file>resources/MahjongTilesImages/Wind/NorthWind.png</file>
+        <file>resources/MahjongTilesImages/Wind/SouthWind.png</file>
+        <file>resources/MahjongTilesImages/Wind/WestWind.png</file>
+    </qresource>
+</RCC>

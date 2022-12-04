@@ -8,6 +8,7 @@
 
 #include "tilelist.h"
 #include "tiledatareader.h"
+#include "tilebucket.h"
 
 class MainForm : public QWidget
 {
@@ -19,8 +20,14 @@ public:
 
 private:
     QVBoxLayout* mainLayout;
+
     TileList* allTiles;
     QScrollArea* allTilesScroll;
+
+    TileBucket* handBucket;
+
+private slots:
+    void giveTileToBucket(TileBucket* bucket);
 };
 
 #endif // MAINFORM_H

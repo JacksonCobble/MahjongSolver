@@ -12,13 +12,20 @@ class TileList : public QWidget
     Q_OBJECT
 
 public:
-    explicit TileList(QWidget *parent = nullptr, QVector<InteractTile*> tileList = QVector<InteractTile*>());
+    explicit TileList(QWidget *parent = nullptr,
+                      QVector<InteractTile*> tileList = QVector<InteractTile*>());
+
+    InteractTile* getSelectedTile();
+    void addNewTile(InteractTile* t);
 
     ~TileList();
 
 private:
     QHBoxLayout* mainLayout;
+    InteractTile* selectedTile;
 
+private slots:
+    void setSelectedTile(InteractTile* info);
 };
 
 #endif // TILELIST_H

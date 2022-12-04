@@ -2,13 +2,13 @@
 
 TileDataReader::TileDataReader()
 {
-    this->filename = "";
+    this->filename = QString("no file");
 
 }
 
 void TileDataReader::setFilestream(std::string f)
 {
-    this->filename = f;
+    this->filename = QString::fromStdString(f);
 }
 
 QVector<InteractTile*> TileDataReader::getTiles()
@@ -17,15 +17,17 @@ QVector<InteractTile*> TileDataReader::getTiles()
     QVector<InteractTile*> mytiles;
 
     //open up file stream
-    std::fstream myfile;
-    myfile.open(this->filename, std::ios::in);
+    QFile myfile(this->filename);
+    myfile.open(QIODevice::ReadOnly | QIODevice::Text);
+    QTextStream in(&myfile);
+    QString myline;
 
-    std::string tmp;
-    //loop over txt file
-    while(getline(myfile, tmp))
+    //loop
+    while(!in.atEnd())
     {
         //pull data, parse values, add to our vector
-        mytiles.push_back(this->makeTile(tmp));
+        myline = in.readLine();
+        mytiles.push_back(this->makeTile(myline.toStdString()));
     }
 
     return mytiles;
@@ -46,7 +48,7 @@ InteractTile* TileDataReader::makeTile(std::string s)
     std::string image = token.second;
 
     //create new tile object and return
-    return new InteractTile("", nullptr, std::pair<Value, Suit>(v,su), image);
+    return new InteractTile("", nullptr, std::pair<Value, Suit>(v,su), image, true);
 }
 
 std::pair<std::string, std::string> TileDataReader::parseDataPoint(std::string s)

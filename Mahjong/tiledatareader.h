@@ -1,13 +1,17 @@
 #ifndef TILEDATAREADER_H
 #define TILEDATAREADER_H
+
+#include <QVector>
+#include <QFile>
+#include <QString>
+#include <QTextStream>
+
 #include <string>
 #include <vector>
-#include <fstream>
 #include <unordered_map>
-#include <QVector>
-#include "interacttile.h"
 #include <iostream>
 
+#include "interacttile.h"
 
 class TileDataReader
 {
@@ -17,7 +21,7 @@ public:
     QVector<InteractTile*> getTiles();
 
 private:
-    std::string filename;
+    QString filename;
 
     InteractTile* makeTile(std::string s);
     std::pair<std::string, std::string> parseDataPoint(std::string s);
