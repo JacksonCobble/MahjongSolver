@@ -24,7 +24,7 @@ InteractTile::InteractTile(const QString& text, QWidget* parent,
 InteractTile::InteractTile(QWidget* parent, InteractTile* t) : QLabel(parent)
 {
     this->info = t->getVal();
-    this->img = *(t->pixmap());
+    this->img = t->pixmap();
 }
 
 void InteractTile::setSelectable(bool val)

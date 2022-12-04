@@ -1,0 +1,13 @@
+debug/interacttile.o
+debug/main.o
+debug/mainform.o
+debug/mainwindow.o
+debug/tilebucket.o
+debug/tiledatareader.o
+debug/tilelist.o
+debug/qrc_Resources.o
+debug/moc_interacttile.o
+debug/moc_mainform.o
+debug/moc_mainwindow.o
+debug/moc_tilebucket.o
+debug/moc_tilelist.o

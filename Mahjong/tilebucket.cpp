@@ -1,5 +1,4 @@
 #include "tilebucket.h"
-#include "ui_tilebucket.h"
 
 TileBucket::TileBucket(QWidget *parent, QString name) :
     QWidget(parent)

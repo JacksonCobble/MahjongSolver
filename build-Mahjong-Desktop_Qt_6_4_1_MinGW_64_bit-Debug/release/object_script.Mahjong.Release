@@ -1,0 +1,13 @@
+release/interacttile.o
+release/main.o
+release/mainform.o
+release/mainwindow.o
+release/tilebucket.o
+release/tiledatareader.o
+release/tilelist.o
+release/qrc_Resources.o
+release/moc_interacttile.o
+release/moc_mainform.o
+release/moc_mainwindow.o
+release/moc_tilebucket.o
+release/moc_tilelist.o
